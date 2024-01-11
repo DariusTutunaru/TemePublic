@@ -4,7 +4,7 @@
 #include <iostream>
 using namespace std;
 
-int n,m,v[101][101],i,j,ok;
+int n,m,v[101][101],i,j,ok,ok1=0;
 
 int main() {
     cin>>n>>m;
@@ -19,10 +19,13 @@ int main() {
                 ok=0;
                 break;
             }
-        if(ok)
+        if(ok){
             cout<<i<<" "<<v[i][1]<<endl;
+            ok1=1;
+        }
     }
 
-
+    if(ok1==0)
+        cout<<"nu exista";
 
 }
