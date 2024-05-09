@@ -134,7 +134,7 @@ int suma(int n){
 ///testul 9
 
 
-int suma(int n, int& s){
+void suma(int n, int& s){
     s = 0;
     int luat[11] = {0};
     while(n){
@@ -147,7 +147,7 @@ int suma(int n, int& s){
 
 ///testul 10
 
-int produs(int n, int& p){
+void produs(int n, int& p){
     p = 1;
     int luat[11] = {0};
     while(n){
